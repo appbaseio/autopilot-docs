@@ -8,4 +8,4 @@
 
 3. [Understanding Elasticsearch Configurations](https://github.com/appbaseio/autopilot-docs/blob/master/docs/getting-started/Elasticsearch.md)  
 
-4. [How does Autopilot Compare with Other Providers](https://github.com/appbaseio/autopilot-docs/blob/master/docs/features/compare.md)
+4. [How does Autopilot compare with Other Providers](https://github.com/appbaseio/autopilot-docs/blob/master/docs/features/compare.md)
