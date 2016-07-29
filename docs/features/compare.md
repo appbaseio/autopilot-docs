@@ -9,29 +9,29 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
 ### Autopilot [v0.2]
 
-- **Elasticsearch:** Supports v1.6, v1.7, v2.0, v2.1, v2.2 and v2.3 (latest). Intelligent default configurations, users can set all the configurations.
+- **Elasticsearch:** Supports v1.6, v1.7, v2.0, v2.1, v2.2 and v2.3 (latest). Intelligent default configurations, users can set and modify all the configurations.
 - **Kibana (Visualization):** Suppported for all Elasticsearch versions.
 - **Logging*:** Cluster logging supported via external apps like papertrail.
 - **Plugins:** One-click install available for all the popular Elasticsearch and Kibana plugins.
-- **Infrastructure:** Choose your cluster size, instance types, volume size, VPC and availability zones.
+- **Infrastructure:** Supports choosing cluster size, instance types, volume size, VPC and availability zones.
 - **Security:** AWS security groups, Basic Authentication.
 - **Pricing:** Fixed, $0.025 per instance hour (**$18 monthly** per instance).
 
 ### AWS Elasticsearch
 
 - **Elasticsearch:** Supports Elasticsearch v1.5 and v2.3. Limited configuration support.
-- **Kibana (Visualization):** Not supported.
+- **Kibana (Visualization):** Supported.
 - **Logging:** Supported.
 - **Plugins:** Not supported.
 - **Infrastructure:** Supports choosing cluster size, instance types and volume size. VPC selection not supported.
-- **Security:** Use AWS security groups and IAMs.
+- **Security:** AWS security groups and IAMs.
 - **Pricing:** Varies by instance types, effective cost is comparable to Autopilot.
 
 
 ### Bonsai
 
 - **Elasticsearch:** Supports ES v1.7 and v2.2. No configuration support.
-- **Kibana (Visualization):** Supported.
+- **Kibana (Visualization):** Not Supported.
 - **Logging:** Supported.
 - **Plugins:** Not supported.
 -  **Infrastructure:** Multi-tenant by default, with support for dedicated clusters.
@@ -56,4 +56,4 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
 Autopilot offers the most configurable and affordable option for managing Elasticsearch deployments by far.
 
-**Note:** It doesn't offer a point in time data backup and restore option as of v0.2 today, it's on our roadmap.
+**Note:** It doesn't offer a point-in-time data backup and restore option as of v0.2 today, but it's on our roadmap.
