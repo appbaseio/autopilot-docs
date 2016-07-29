@@ -54,6 +54,6 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
 ### Summary
 
-Autopilot offers the most configurable and affordable option for managing Elasticsearch deployments.
+Autopilot offers the most configurable and affordable option for managing Elasticsearch deployments by far.
 
 **Note:** It doesn't offer a point in time data backup and restore option as of v0.2 today, it's on our roadmap.
