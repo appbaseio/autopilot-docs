@@ -23,7 +23,11 @@ Some benefits for picking ``v1.6`` and ``v1.7`` would be compatibility with your
 
 ### Cluster Configs
 
-Elasticsearch allows specifying a configuration .yml file that is used while deploying a cluster. Autopilot currently supports a subset of these configs which can be specified through it's UI.
+Elasticsearch allows specifying a configuration .yml file that is used while deploying a cluster. Autopilot comes with a good default configuration that can be extended by the user. A good reference point for available configurations can be [found here](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html).
+
+![](https://camo.githubusercontent.com/dedeabcbb5875557a3e825f1633807cf1bf8eb59/68747470733a2f2f692e696d6775722e636f6d2f325765535342442e706e67)
+
+#### Common Configuration Options
 
 #### HEAP SIZE
 A good default here is 1/2 of your instance's RAM size.
@@ -51,6 +55,8 @@ Kibana also comes with it's own set of plugins. As of v0.1, Autopilot doesn't su
 
 ### Plugins
 
-Elasticsearch has a nascent plugin ecosystem to augment it's functionality. Two popular uses of plugins are cluster management and data visualization within Elasticsearch. Autopilot supports all the popular plugins for Elasticsearch.
+Elasticsearch has an up and coming plugin ecosystem to augment it's functionality. Two popular use-cases of plugins are cluster management and data visualization within Elasticsearch. Autopilot supports all the popular plugins for Elasticsearch.
+
+![](https://camo.githubusercontent.com/add364f5f713bf445313637f104b2881e527d4df/68747470733a2f2f692e696d6775722e636f6d2f4f3443485952332e706e67)
 
 If you would like Autopilot to support a particular plugin, send us a request at autopilot@appbase.io with subject "New plugin support request".
