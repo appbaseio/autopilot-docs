@@ -16,3 +16,14 @@
 1. [v0.2 - Elasticsearch Configurations](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.2.md) July 29, 2016  
 
 2. [v0.1 - We made it!](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.1.md) July 14, 2016  
+ 
+
+## Roadmap
+
+v0.3 - Full support for SSH Access, HTTPS domains
+
+v0.4 - Point-in-time Data Backups
+
+...
+
+v1.0 - Production grade Elasticsearch deployments for AWS and Digital Ocean
