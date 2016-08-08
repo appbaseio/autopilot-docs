@@ -11,6 +11,8 @@
 
 ## Release Logs
 
+1. [v0.3 - SSH Access](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.3.md) (Preview) Aug 8, 2016
+
 1. [v0.2 - Elasticsearch Configurations](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.2.md) July 29, 2016  
 
 2. [v0.1 - We made it!](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.1.md) July 14, 2016  
