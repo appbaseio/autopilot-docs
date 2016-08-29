@@ -10,7 +10,7 @@ Configuring an IAM user for Autopilot is a one-time process that should take les
 
 The video below shows how to configure an IAM user with the necessary permissions for Autopilot in 1 min.
 
-[![Youtube Video for IAM](https://i.imgur.com/Hdwsmld.png)](https://www.youtube.com/watch?v=ixPm1LNsOoA)
+[![Youtube Video for IAM](https://i.imgur.com/Hdwsmld.png)](https://vimeo.com/180582772)
 
 Alternatively, you can follow the direct steps listed below to the same effect.
 
