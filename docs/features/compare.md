@@ -7,7 +7,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
  
 
-### Autopilot [v0.2]
+### Autopilot [v0.4]
 
 - **Elasticsearch:** Supports v1.6, v1.7, v2.0, v2.1, v2.2 and v2.3 (latest). Intelligent default configurations, users can set and modify all the configurations.
 - **Kibana (Visualization):** Suppported for all Elasticsearch versions.
@@ -15,6 +15,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 - **Plugins:** One-click install available for all the popular Elasticsearch and Kibana plugins.
 - **Infrastructure:** Supports choosing cluster size, instance types, volume size, VPC and availability zones.
 - **Security:** AWS security groups, Basic Authentication.
+- **Data Backups:** Indefinite periodic hourly backups and cluster restore.
 - **Pricing:** Fixed, $0.025 per instance hour (**$18 monthly** per instance).
 
 ### AWS Elasticsearch
@@ -25,6 +26,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 - **Plugins:** Not supported.
 - **Infrastructure:** Supports choosing cluster size, instance types and volume size. VPC selection not supported.
 - **Security:** AWS security groups and IAMs.
+- **Data Backups:** Daily backups.
 - **Pricing:** Varies by instance types, effective cost is comparable to Autopilot.
 
 
@@ -36,6 +38,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 - **Plugins:** Not supported.
 -  **Infrastructure:** Multi-tenant by default, with support for dedicated clusters.
 -  **Security:** Basic Authentication.
+- **Data Backups:** Periodic hourly backups.
 - **Pricing:** A 3-cluster dedicated plan costs **$600 monthly**, an equivalent Autopilot cluster would cost **3x less**.
 
 
@@ -47,6 +50,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 -  **Plugins:** One-click install available for popular plugins.
 -  **Infrastructure:** Multi-tenant setting, no choice.
 -  **Security:** Supported with Shield (an Elasticsearch plugin).
+- **Data Backups:** Periodic 30-min backups. 
 -  **Pricing:** Starts at **$85 monthly** for production use, an equivalent Autopilot cluster would cost **4x less**.
 
 
@@ -56,4 +60,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
 Autopilot offers the most configurable and affordable option for managing Elasticsearch deployments by far.
 
-**Note:** It doesn't offer a point-in-time data backup and restore option as of v0.2 today, but it's on our roadmap.
+Update: 
+
+* Starting ``v0.4``, Autopilot supports periodic backups with a point-in-time restore functionality.  
+* Starting ``v0.3``, Autopilot creates SSL encrypted domains for the Elasticsearch cluster.
