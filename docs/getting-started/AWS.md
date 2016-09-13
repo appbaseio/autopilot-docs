@@ -1,16 +1,16 @@
 # Autopilot <> AWS
 
-Autopilot is an orchestration service that provisions an Elasticsearch cluster on your AWS account. For doing this, it needs to access and create EC2 instances on your account.
+Autopilot is an orchestration service that provisions and manages an Elasticsearch cluster on your AWS account. For doing this, it needs to manage EC2 instances and store data backups on S3 service.
 
-Autopilot can do this through AWS's [IAM (Identity and Access Management)](https://aws.amazon.com/iam/), which allows fine-grained access to AWS APIs without any overhead. 
+Autopilot can do this through AWS's [IAM (Identity and Access Management)](https://aws.amazon.com/iam/), which allows fine-grained access to AWS APIs without introducing any overheads.
 
-Configuring an IAM user for Autopilot is a one-time process that should take less than 10 minutes.
+Configuring an IAM user for Autopilot is a one time process that should take less than 5 minutes.
 
 ## Video Walkthrough
 
-The video below shows how to configure an IAM user with the necessary permissions for Autopilot in 1 min.
+The video below shows how to configure an IAM user with the necessary permissions for Autopilot in 2 mins.
 
-[![Youtube Video for IAM](https://i.imgur.com/Hdwsmld.png)](https://vimeo.com/180582772)
+[![Creating an AWS IAM user for Autopilot](https://i.imgur.com/Hdwsmld.png)](https://vimeo.com/180582772)
 
 Alternatively, you can follow the direct steps listed below to the same effect.
 
@@ -30,7 +30,7 @@ We will set up the IAM user and link it to Autopilot dashboard in five easy step
 Copy the ``Acess Key ID`` and ``Secret Access Key`` values, and paste them into Autopilot's **Launch Cluster** tab.
 > ![](https://i.imgur.com/cKIq3r2.png)
 
-#### Step 4. By default, a user has no permissions. We will add the permissions for accessing EC2 instances.
+#### Step 4. By default, a user has no permissions. We will add the permissions for accessing EC2 instances and read / write data into S3.
 > ![](https://i.imgur.com/7hspp35.png)
 
 Click on the **user**.
@@ -39,8 +39,11 @@ Click on the **user**.
 Attach ``EC2FullAccess`` policy.
 > ![](https://i.imgur.com/LoNiFcN.png)
 
+Attach ``S3FullAccess`` policy.
+> ![](https://i.imgur.com/6vL7UwW.png)
+
 #### Step #5. Final result
-> ![](https://i.imgur.com/Rzezuxz.png)
+> ![](https://i.imgur.com/2nS4MW4.png)
 
 This is the text that should appear in the policy.
 ```js
@@ -49,6 +52,11 @@ This is the text that should appear in the policy.
   "Statement": [
     {
       "Action": "ec2:*",
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+		{
+      "Action": "s3:*",
       "Effect": "Allow",
       "Resource": "*"
     },

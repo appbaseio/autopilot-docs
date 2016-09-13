@@ -1,6 +1,6 @@
 ## Elasticsearch Configurations
 
-The latest stable Elasticsearch version is ``v2.3``. Autopilot always deploys the latest stable Elasticsearch version as a default. There can however be good reasons for a version that's different from the latest version.
+The latest stable Elasticsearch version is ``v2.4``. Autopilot always deploys with the latest stable minor Elasticsearch version as a default. There can however be good reasons for a version that's different from the latest version.
 
 ### Versions
 
@@ -8,9 +8,11 @@ There are two major versions that Elasticsearch users use today, ``1.x`` and ``2
 
 #### 2.x
 
-``v2.0``, ``v2.1``, ``v2.2``, ``v2.3`` - If you are using Elasticsearch for the first time, or don't require to interface with an existing 1.x version, we recommend picking one of these versions.
+``v2.0``, ``v2.1``, ``v2.2``, ``v2.3``, ``v2.4`` - If you are using Elasticsearch for the first time, or don't require to interface with an existing 1.x version, we recommend picking one of these versions.
 
-Of these, we recommend ``v2.3`` - it introduces the new [``/_reindex``](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html) endpoint, which comes in nifty as mappings are immutable and generally builds on the previous 2.x releases.
+Of these, we recommend ``v2.4`` - it introduces the new [``/_reindex``](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html) endpoint, which comes in nifty as mappings are immutable and generally builds on the previous 2.x releases.
+
+It also re-introduced field names with dots like ``foo.bar.z`` that were allowed by Elasticsearch up to ``v1.7`` but disabled starting ``v2.0`` due to mapping changes.
 
 *Note:* If you are building an application that uses geo_point and maps based queries with percolators, we recommend using either ``v2.0`` or ``v2.1``. There is a [known issue](https://github.com/elastic/elasticsearch/issues/16832) on versions after 2.1.2 which will only be addressed starting ``v5.0``.
 
@@ -39,13 +41,13 @@ Min master nodes defines the minimum nodes needed for a stable cluster. To avoid
 Controls the cluster availability. An index with zero replicas will experience data loss when a single node becomes unavailable. **1** is a good default value here. For search heavy workloads, increasing this value will improve read performance of the cluster at the tradeoff of using more hardware.
 
 #### INDEX # SHARDS
-The number of primary shards used per index. A shard is the physical namespace in which data resides. An index is a logical namespace which routes to it's shards depending on the the setting here. 
+The number of primary shards used per index. A shard is the physical namespace in which data resides. An index is a logical namespace which routes to it's shards depending on the the setting here.
 
 ---
 
 ### Kibana
 
-Kibana is a visualization framework for Elasticsearch data. One can define charts, dashboards and a variety of data viz scenarios through Kibana. 
+Kibana is a visualization framework for Elasticsearch data. One can define charts, dashboards and a variety of data viz scenarios through Kibana.
 
 Autopilot supports provisioning Kibana along with the Elasticsearch cluster. It generates a **username:password** based auth token as a good default security for browsing Kibana.
 
