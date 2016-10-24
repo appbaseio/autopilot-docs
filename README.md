@@ -1,6 +1,6 @@
 # Autopilot Docs (MIT License)
 
-## Documentation for Autopilot v0.5
+## Documentation for Autopilot v0.6
 
 1. [How Autopilot compares with Other Providers](https://github.com/appbaseio/autopilot-docs/blob/master/docs/features/compare.md)
 
@@ -10,6 +10,8 @@
 
 
 ## Release Logs
+
+1. [v0.6 - Autopilot on Digital Ocean!](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.6.md) Oct 24, 2016
 
 1. [v0.5 - DB Forks, Improvements in Data Availability and Notifications](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.5.md) Sep 12, 2016
 
@@ -30,8 +32,10 @@
 
 <s>v0.5 - Database Forks, Improved Data Availability and System Notifications</s>
 
-v0.6 - Horizontal Scaling
+<s>v0.6 - Autopilot on DigitalOcean</s>
+
+v0.7 - Support Zero Downtime Operations with Horizontal Scaling
 
 ...
 
-v1.0 - Production grade Elasticsearch deployments for AWS and Digital Ocean
+v1.0 - Production grade Elasticsearch deployments for AWS, Azure and Digital Ocean
