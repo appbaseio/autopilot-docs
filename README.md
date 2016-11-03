@@ -11,7 +11,7 @@
 
 ## Release Logs
 
-1. [v0.6 - Autopilot on Digital Ocean!](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.6.md) Oct 24, 2016
+1. [v0.6 - Autopilot on Digital Ocean and Elasticsearch v5.0](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.6.md) Nov 3, 2016
 
 1. [v0.5 - DB Forks, Improvements in Data Availability and Notifications](https://github.com/appbaseio/autopilot-docs/blob/master/docs/changelog/v0.5.md) Sep 12, 2016
 
@@ -32,7 +32,7 @@
 
 <s>v0.5 - Database Forks, Improved Data Availability and System Notifications</s>
 
-<s>v0.6 - Autopilot on DigitalOcean</s>
+<s>v0.6 - Autopilot on DigitalOcean, Elasticsearch v5.0</s>
 
 v0.7 - Support Zero Downtime Operations with Horizontal Scaling
 
