@@ -7,14 +7,14 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
 
 
-### Autopilot [v0.4]
+### Autopilot [v0.6]
 
-- **Elasticsearch:** Supports v1.6, v1.7, v2.0, v2.1, v2.2, v2.3 and v2.4 (latest). Intelligent default configurations, users can set and modify all the configurations.
+- **Elasticsearch:** Supports v1.6, v1.7, v2.0, v2.1, v2.2, v2.3, v2.4 and v5.0 (latest). Intelligent default configurations, users can set and modify all the configurations.
 - **Kibana (Visualization):** Suppported for all Elasticsearch versions.
 - **Logging*:** Cluster logging supported via external apps like papertrail.
 - **Plugins:** One-click install available for all the popular Elasticsearch and Kibana plugins.
-- **Infrastructure:** Supports choosing cluster size, instance types, volume size, VPC and availability zones.
-- **Security:** AWS security groups, Basic Authentication.
+- **Infrastructure:** Choice between AWS and Digital Ocean as providers. Supports choosing cluster size, instance types, volume size, VPC and availability zones.
+- **Security:** AWS security groups, Basic Authentication, TLS domains.
 - **Data Backups:** Indefinite periodic hourly backups and cluster restore.
 - **Pricing:** Fixed, $0.025 per instance hour (**$18 monthly** per instance).
 
@@ -44,7 +44,7 @@ There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. I
 
 ### Elastic.co Cloud
 
--  **Elasticsearch:** Supports v1.7, v2.2, v2.3 and v2.4. Sensible default configurations and ability to extend them.
+-  **Elasticsearch:** Supports v1.7, v2.2, v2.3, v2.4 and v5.0. Sensible default configurations and ability to extend them.
 -  **Kibana (Visualization):** Supported.
 -  **Logging:** Supported.
 -  **Plugins:** One-click install available for popular plugins.
@@ -62,5 +62,6 @@ Autopilot offers the most configurable and affordable option for managing Elasti
 
 Update:
 
+* Starting ``v0.6``, Autopilot can be deployed on Digital Ocean along with AWS.  
 * Starting ``v0.4``, Autopilot supports periodic backups with a point-in-time restore functionality.  
 * Starting ``v0.3``, Autopilot creates SSL encrypted domains for the Elasticsearch cluster.
