@@ -1,6 +1,6 @@
 ## Autopilot vs Other Elasticsearch providers
 
-Autopilot provisions Elasticsearch on your choice of infrastructure (AWS today), letting you tune software and settings without compromises of a multi-tenant environment.
+Autopilot provisions Elasticsearch on your choice of infrastructure (AWS and Digital Ocean today), letting you tune software and settings without compromises of a multi-tenant environment.
 
 There are several popular Elasticsearch providers: AWS, Bonsai, QBox, Elastic. In this post, we will highlight how Autopilot compares with AWS Elasticsearch, Bonsai and Elastic.co's cloud offering.
 
